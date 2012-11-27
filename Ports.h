@@ -17,8 +17,7 @@
 
 // tweak this to switch ATtiny84 etc to new Arduino 1.0+ conventions
 // see http://arduino.cc/forum/index.php/topic,51984.msg371307.html#msg371307
-#if ARDUINO >= 100 && !defined(__AVR_ATtiny84__) && !defined(__AVR_ATtiny85__) \
-        && !defined(__AVR_ATtiny44__) && !defined(__AVR_ATtiny45__)
+#if ARDUINO >= 100
 #define WRITE_RESULT size_t
 #else
 #define WRITE_RESULT void
